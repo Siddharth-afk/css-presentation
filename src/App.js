@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Heading from './Heading';
+import History from './History';
+import ResDes from './ResDes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='flex bg-gradient-to-r from-cyan-500 to-blue-500 h-[380px] w-screen'>
+        <Heading />
+      </div>
+      <div className='bg-offwhite w-screen h-12'></div>
+      <div className='flex bg-offwhite w-screen h-screen'>
+        <History />
+      </div>
+      <div className='w-screen h-[175vh]'>
+        <ResDes />
+      </div>
     </div>
   );
 }
